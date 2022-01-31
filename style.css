@@ -148,6 +148,7 @@
     top: -10px;
     left: 10%;
     background: #f5f5f5;
+    /* background: red; */ /*sovrascritto colore per vedere meglio i rettangoli mobili */
     width: 60px;
     height: 20px;
 }
@@ -156,6 +157,7 @@
     bottom: -10px;
     right: 20%;
     background: #f5f5f5;
+    /* background: red; */ /*sovrascritto colore per vedere meglio i rettangoli mobili */
     width: 60px;
     height: 20px;
 }
@@ -174,5 +176,56 @@
 @keyframes animazionebottomwhite {
     50% {
         right: calc(100% - 60px);
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: girocompletotopwhite 2s linear infinite;
+}
+@keyframes girocompletotopwhite {
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: calc(100% - 10px);
+    }
+    50% {
+        left: calc(100% - 60px);
+        top: calc(100% - 10px);
+    }
+    80% {
+        left: -30px;
+        top: calc(100% - 10px);
+    }
+    95% {
+        left: -30px;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: girocompletobottomwhite 2s infinite;
+}
+@keyframes girocompletobottomwhite {
+    30% {
+        bottom: -10px;
+        right: calc(100% - 30px);
+    }
+    45% {
+        bottom: calc(100% - 10px);
+        right: calc(100% - 30px);
+    }
+    50% {
+        bottom: calc(100% - 10px);
+        right: calc(100% - 60px);
+    }
+    80% {
+        bottom: calc(100% - 10px);
+        right: -30px
+    }
+    95% {
+        bottom: -10px;
+        right: -30px;
     }
 }
