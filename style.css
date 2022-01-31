@@ -1,3 +1,4 @@
+/* ESERCIZIO 1: hover genera un cambio background graduale */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -8,6 +9,9 @@
     background-color: red;
 }
 
+
+
+/* ESERCIZIO 2: click fa aumentare la larghezza dell'elemento */
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -18,6 +22,9 @@
     width: 100%;
 }
 
+
+
+/* ESERCIZIO 3: hover genera angoli arrotondati */
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -28,6 +35,9 @@
     border-radius: 50%;
 }
 
+
+
+/* ESERCIZIO 4: hover fa scomparire l'elemento */
 .ex-4-square {
     width: 100px;
     height: 100px;
@@ -38,6 +48,9 @@
     opacity: 0;
 }
 
+
+
+/* ESERCIZIO 5: hover ingrandisce l'elemento, click lo diminuisce */
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -52,13 +65,20 @@
     transform: scale(.5);
 }
 
+
+
+/* ESERCIZI 6, 7 e 8: filtri e combinazioni di filtri e transizioni*/
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
+
+
 .ex-6-img:hover {
     filter: grayscale(1);
 }
+
+
 
 .ex-7-img {
     transition: 3s;
@@ -66,6 +86,8 @@
 .ex-7-img:hover {
     filter: sepia(1) grayscale(.5);
 }
+
+
 
 .ex-8-img {
     transition: 3s;
@@ -75,6 +97,9 @@
     filter: sepia(.5) grayscale(.5);
 }
 
+
+
+/* ESERCIZIO 9: hover ingrandisce l'immagine e applica filtri */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
@@ -86,6 +111,9 @@
     filter: sepia(.5) grayscale(.5);
 }
 
+
+
+/* ESERCIZIO 10: animazione rotazione elemento */
 .ex-10-icon {
     font-size: 60px;
     animation-name: rotazione;
@@ -106,8 +134,16 @@
     100% {
         transform: rotate(-360deg);
     }
+    /* alternativa con meno codice presa dalla soluzione:
+    0% {
+        transform: rotate(1turn);
+    }
+    */
 }
 
+
+
+/* ESERCIZIO 11: animazione rotazione parziale */
 .ex-11-icon {
     font-size: 60px;
 }
@@ -130,6 +166,8 @@
 }
 
 
+
+/* ESERCIZI 12 e 13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -148,7 +186,7 @@
     top: -10px;
     left: 10%;
     background: #f5f5f5;
-    background: red; /*sovrascritto colore per vedere meglio i rettangoli mobili */
+    /* background: red; */ /* sovrascritto colore per vedere meglio i rettangoli mobili */
     width: 60px;
     height: 20px;
 }
@@ -157,10 +195,12 @@
     bottom: -10px;
     right: 20%;
     background: #f5f5f5;
-    background: red; /*sovrascritto colore per vedere meglio i rettangoli mobili */
+    /* background: red; */ /* sovrascritto colore per vedere meglio i rettangoli mobili */
     width: 60px;
     height: 20px;
 }
+
+
 
 .ex-12-button:hover .ex-12-top-white {
     animation: animazionetopwhite 2s linear;
@@ -178,6 +218,8 @@
         right: calc(100% - 60px);
     }
 }
+
+
 
 .ex-13-button:hover .ex-13-top-white {
     animation: girocompletotopwhite 2s linear infinite;
