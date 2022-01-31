@@ -186,7 +186,7 @@
     top: -10px;
     left: 10%;
     background: #f5f5f5;
-    /* background: red; */ /* sovrascritto colore per vedere meglio i rettangoli mobili */
+    /* background: red; */      /* sovrascritto colore per vedere meglio i rettangoli mobili */
     width: 60px;
     height: 20px;
 }
@@ -195,7 +195,7 @@
     bottom: -10px;
     right: 20%;
     background: #f5f5f5;
-    /* background: red; */ /* sovrascritto colore per vedere meglio i rettangoli mobili */
+    /* background: red; */      /* sovrascritto colore per vedere meglio i rettangoli mobili */
     width: 60px;
     height: 20px;
 }
@@ -238,11 +238,11 @@
         top: calc(100% - 10px);
     }
     75% {
-        left: -30px;
+        left: -10px;
         top: calc(100% - 10px);
     }
     90% {
-        left: -30px;
+        left: -10px;
         top: -10px;
     }
     100% {
@@ -260,11 +260,11 @@
     }
     30% {
         bottom: -10px;
-        right: calc(100% - 30px);
+        right: calc(100% - 40px);
     }
     45% {
         bottom: calc(100% - 10px);
-        right: calc(100% - 30px);
+        right: calc(100% - 40px);
     }
     75% {
         bottom: calc(100% - 10px);
